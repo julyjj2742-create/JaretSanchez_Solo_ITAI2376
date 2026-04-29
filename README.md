@@ -136,6 +136,3 @@ Demo Video
 (Add your link here once recorded)  
 Example:
 https://youtu.be/your-demo-link (youtu.be in Bing)
-
-🎉 README Complete
-This README is polished, complete, and aligned with every requirement in the assignment.
