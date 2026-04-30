@@ -1,18 +1,30 @@
-# Environment
+# Never upload real environment variables
 .env
 
-# Python cache
+# Python cache files
 __pycache__/
-*.py[cod]
+*.pyc
+*.pyo
+*.pyd
 
-# Jupyter
+# Jupyter notebook checkpoints
 .ipynb_checkpoints/
 
-# Virtual environments
+# Virtual environment folders
 venv/
-.env/
+env/
 .venv/
 
-# OS / Editor files
-.DS_Store
+# VS Code settings
 .vscode/
+
+# macOS system file
+.DS_Store
+
+# Colab-specific metadata (sometimes appears)
+*.swp
+*.swo
+
+# Optional: ignore large data files
+data/*.zip
+data/*.tar
