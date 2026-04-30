@@ -1,2 +1,2 @@
-# README
-(To be completed)
+## DocuHelp: Intelligent Document Assistant
+
