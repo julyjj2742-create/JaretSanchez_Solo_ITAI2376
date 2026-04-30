@@ -52,7 +52,7 @@ This creates a lightweight retrieval‑augmented system that produces grounded s
 `OPENAI_API_KEY=your_key_here`
 
 ## How to Run the Agent
-Open DocuHelp.ipynb in Google Colab and run the cells in order:
+Open agent.ipynb in Google Colab and run the cells in order:
 1. Install dependencies
 2. Enter your OpenAI API key
 3. Upload a PDF
