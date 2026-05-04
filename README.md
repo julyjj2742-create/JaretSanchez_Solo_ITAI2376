@@ -31,7 +31,8 @@ DocuHelp processes a PDF through several stages:
 
 This creates a lightweight retrieval‑augmented system that produces grounded summaries.
 ### Architecture Diagram
-<img width="321" height="1031" alt="architecture" src="https://github.com/user-attachments/assets/39e81ac8-b390-4a4a-96bd-637d22f47f21" />
+<img width="261" height="1071" alt="architecture" src="https://github.com/user-attachments/assets/58819a4f-6478-43a7-836f-7f6b93c1dae3" />
+
 
 ## Framework and Tools Used
 - LangChain – document loaders, text splitting
