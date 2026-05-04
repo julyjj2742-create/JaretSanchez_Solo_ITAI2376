@@ -19,17 +19,19 @@ This matches my Midterm plan (no change).
 The agent uses a simple two‑step workflow: retrieve → summarize.
 
 ## Architecture Overview
-DocuHelp processes a PDF through several stages:
+DocuHelp processes an uploaded PDF through a retrieval‑augmented pipeline:
 
-1. Extract text from the PDF
-2. Split the text into overlapping chunks
-3. Convert chunks into embeddings
-4. Store embeddings in a FAISS vector index
-5. Classify the document topic using a local ML model
-6. Use a LangGraph agent to retrieve relevant chunks
-7. Summarize the retrieved content using an LLM
+1. Extract text from the PDF using PyPDFLoader.
+2. Split the text into overlapping chunks with RecursiveCharacterTextSplitter.
+3. Generate embeddings for each chunk using MiniLM.
+4. Store embeddings in a FAISS vector index for fast similarity search.
+5. Predict the document topic using a lightweight TF‑IDF + Logistic Regression classifier.
+6. Run a LangGraph agent that performs a two‑step workflow:
+  - retrieve the most relevant chunks from FAISS
+  - summarize them using GPT‑4o‑mini
+7. Produce the final output, including the predicted topic and a grounded summary.
 
-This creates a lightweight retrieval‑augmented system that produces grounded summaries.
+This architecture creates a lightweight, reliable retrieval‑augmented system that combines embeddings, vector search, classical ML classification, and LLM‑based summarization.
 ### Architecture Diagram
 <img width="261" height="1071" alt="architecture" src="https://github.com/user-attachments/assets/58819a4f-6478-43a7-836f-7f6b93c1dae3" />
 
