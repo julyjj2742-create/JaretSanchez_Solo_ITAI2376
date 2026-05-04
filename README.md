@@ -95,4 +95,4 @@ Summary: Overview of neural network structure, training, and common applications
 - Requires an OpenAI API key for summarization.
 
 ## Demo Video
-### Demo video Link: (will be added soon)
+https://youtu.be/FIEJfJ5649c
