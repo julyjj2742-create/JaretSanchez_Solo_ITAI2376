@@ -66,6 +66,8 @@ Open agent.ipynb in Google Colab and run the cells in order:
 No command‑line steps required.
 
 ## Example Usage
+Three sample PDFs from different subjects are included in `data/sample_docs/` for testing the agent.
+
 ### Example 1
 Input PDF: “A Definition of AI”
 
