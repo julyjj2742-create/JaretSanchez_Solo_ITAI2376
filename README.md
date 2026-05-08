@@ -41,7 +41,7 @@ This architecture creates a lightweight, reliable retrieval‑augmented system t
 - LangGraph – agent workflow (retrieve → summarize)
 - FAISS – vector store for semantic search
 - SentenceTransformers (MiniLM) – embeddings
-- scikit‑learn – local AG News classifier
+- scikit‑learn – TF-IDF + Logistic Regression topic classifier (trained on AG News)
 - OpenAI GPT‑4o‑mini – summarization
 - Python 3.12
 - Google Colab
